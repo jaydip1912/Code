@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>TODO supply a title</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+            div{
+                width: 50%;
+                height: 500px;
+                border-style: solid;
+                border-color: black;
+               
+              
+            }
+            input.in{
+                width: 130px;
+                height: 30px;
+                font-size: 16px;
+            }
+          
+        </style>
+        
+    </head>
+    <body>
+        <center>
+            <form action="Edit" method="Post">
+            <div>
+                <br>
+                <h1>EDIT STUDENT</h1>
+                <table>
+                    <tr>
+                        <td>Roll No :</td>
+                        <td><input type="number" name="rn" /></td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                         <td></td>
+                    </tr>
+                    <tr>
+                        <td>Name :</td>
+                        <td><input type="text" name="nm" /></td>
+                    </tr>
+                     <tr>
+                        <td></td>
+                         <td></td>
+                    </tr>
+                    <tr>
+                        <td>Gender :</td>
+                         <td>        
+                               <input type="radio" id="male" name="gen" value="Male"/>
+                                <label for="mele">Male</label><br>
+                                <input type="radio" id="female" name="gen" value="Female"/>
+                                <label for="femele">Female</label>        
+                         </td>
+                    </tr>
+                    <tr>
+                        
+                        <td></td>
+                         <td></td>
+                    </tr>
+                    <tr>
+                        
+                        <td>Department :</td>
+                        <td>
+                             <select name="dropdown">
+                                <option value="null" selected>Select Department</option>  
+                                <option value="it" >M.Sc(IT)</option>
+                                <option value="cs">Computer Science</option>
+                                <option value="mca">M.C.A</option>
+                                
+                             </select>
+                        </td>
+                    </tr>
+                    <tr>
+                        
+                        <td></td>
+                         <td></td>
+                    </tr>
+                     <tr>
+                        
+                        <td>Skill :</td>
+                         <td>  <input type="checkbox" id="c1" name="c1" value="C">C <br><input type="checkbox" id="c2" name="c1" value="C++">C++ <br><input type="checkbox" id="c3" name="c1" value="Java">JAVA<br>
+                                    <input type="checkbox" id="c4" name="c1" value="Python">Python 
+                  </td> 
+                    </tr>
+                     <tr>
+                        
+                        <td></td>
+                         <td></td>
+                    </tr>
+                   
+                    <tr>
+                        <td>Age :</td>
+                        <td><input type="text" name="ag" /></td>
+                    </tr>
+                     <tr>
+                        <td></td>
+                         <td></td>
+                    </tr>
+                    <tr>
+                        <td>Address :</td>
+                        <td><input type="text" name="ad" /></td>
+                    </tr>
+                     <tr>
+                        <td></td>
+                         <td></td>
+                    </tr>
+                    <tr>
+                        <td>Phone No :</td>
+                        <td><input type="text" name="pn" /></td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                         <td></td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                         <td></td>
+                    </tr>
+                     <tr>
+                        <td></td>
+                         <td></td>
+                    </tr>
+                    <tr>
+                        <td>&nbsp;&nbsp;&nbsp;&nbsp;<input type="submit" value="EDIT" name="edit" class="in"/></td>
+                        <td>&nbsp;&nbsp;&nbsp;&nbsp;<input type="reset" value="RESET" name="reset" class="in"/></td>
+                    </tr>
+                </table>
+            </div>
+            </form>
+        </center>
+    </body>
+</html>
