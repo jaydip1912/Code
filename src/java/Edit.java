@@ -30,14 +30,15 @@ public class Edit extends HttpServlet
             Connection con=DriverManager.getConnection("jdbc:mysql://localhost:3306/monday","root","");
             String sql = "UPDATE tb SET name=?,gender=?,department=?,skill=?,age=?,address=?,no=? where rollno=?";
             PreparedStatement st = con.prepareStatement(sql);
-            st.setString(1, r);
-            st.setString(2, nm);
-            st.setString(3, g);
-            st.setString(4, d);
-            st.setString(5,s);
-            st.setString(6, a);
-            st.setString(7,ad);
-            st.setString(8, p);
+            
+            st.setString(1, nm);
+            st.setString(2, g);
+            st.setString(3, d);
+            st.setString(4,s);
+            st.setString(5, a);
+            st.setString(6,ad);
+            st.setString(7, p);
+            st.setString(8, r);
             st.executeUpdate();  
             out.println("<html><head> <style>\n" +
                         "div{\n" +
